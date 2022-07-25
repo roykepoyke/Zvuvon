@@ -158,8 +158,8 @@ function Calc() {
   httpGet(Purl, 'json', true, function(response) { finalPos = response.position });
 
   let Vurl = 'http://192.168.59.100:31705/velocity?V=' + zvuvon.v +'&A=' + zvuvon.a +'&H=' + zvuvon.h;
-  httpGet(Vurl, 'json', true, function(response) { finalV = response.position });
+  httpGet(Vurl, 'json', true, function(response) { finalV = response.velocity });
 
   let Aurl = 'http://192.168.59.100:31705/angle?V=' + zvuvon.v +'&A=' + zvuvon.a +'&H=' + zvuvon.h;
-  httpGet(Aurl, 'json', true, function(response) { finalA = response.position });
+  httpGet(Aurl, 'json', true, function(response) { finalA = response.angle });
 }
