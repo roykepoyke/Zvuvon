@@ -22,8 +22,8 @@ let finalPos, finalV, finalA;
 function setupUI() {
   calc = new Button('CALCULATE', menuWidth/2, 2*titleSpacing + btnHeight/2 + 3*valueSpacing);
   
-  initV = createInput('50');
-  initA = createInput('20');
+  initV = createInput('1000');
+  initA = createInput('10');
   initH = createInput('15000');
   
   initV.position(menuWidth - 93, 2*titleSpacing - inputsHeight - inputSpacing);
